@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toy Tales</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
+    header {
+      background-color: #ff5c5c;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+    nav a {
+      padding: 14px 20px;
+      display: block;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      background-color: #f0f0f0;
+    }
+    section {
+      padding: 30px;
+      display: none;
+    }
+    section.active {
+      display: block;
+    }
+    .side-by-side {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .side-by-side > div {
+      flex: 1 1 500px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Toy Tales</h1>
+    <p>Explore Visual Insights into Toy Manufacturer Data</p>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showSection('home')">Home</a>
+    <a href="#" onclick="showSection('about')">About</a>
+    <a href="#" onclick="showSection('dashboard')">Dashboard</a>
+    <a href="#" onclick="showSection('story')">Story</a>
+  </nav>
+
+  <section id="home" class="active">
+    <h2>Welcome to Toy Tales</h2>
+    <p>This website provides an insightful look into toy manufacturing data through Tableau visualizations. Use the navigation menu to explore.</p>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p><strong>Toy Tales</strong> is an interactive web platform designed to present data visualizations from Tableau focused on toy manufacturers. It helps users understand trends, top states, and industry changes over the years.</p>
+  </section>
+
+  <section id="dashboard">
+    <h2>Interactive Dashboard</h2>
+    <div class="side-by-side">
+      <div class='tableauPlaceholder' id='viz1751466913831' style='position: relative'>
+        <noscript>
+          <a href='#'>
+            <img alt='Dashboard' src='https://public.tableau.com/static/images/Bo/Book1_17513906001200/Dashboard1/1_rss.png' style='border: none' />
+          </a>
+        </noscript>
+        <object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='Book1_17513906001200/Dashboard1' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https://public.tableau.com/static/images/Bo/Book1_17513906001200/Dashboard1/1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+          <param name='filter' value='publish=yes' />
+        </object>
+      </div>
+    </div>
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1751466913831');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      vizElement.style.width = '1100px'; vizElement.style.height = '1127px';
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+  </section>
+
+  <section id="story">
+    <h2>Storyboard: ToyCraft Tales</h2>
+    <div class="side-by-side">
+      <div class='tableauPlaceholder' id='viz1751466928965' style='position: relative'>
+        <noscript>
+          <a href='#'>
+            <img alt='Story' src='https://public.tableau.com/static/images/Bo/Book1_17513906001200/ToyCraftTalesTableausVisionintoToyManufacturerData/1_rss.png' style='border: none' />
+          </a>
+        </noscript>
+        <object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='Book1_17513906001200/ToyCraftTalesTableausVisionintoToyManufacturerData' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https://public.tableau.com/static/images/Bo/Book1_17513906001200/ToyCraftTalesTableausVisionintoToyManufacturerData/1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+          <param name='filter' value='publish=yes' />
+        </object>
+      </div>
+    </div>
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1751466928965');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      vizElement.style.width = '1016px'; vizElement.style.height = '991px';
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+  </section>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
